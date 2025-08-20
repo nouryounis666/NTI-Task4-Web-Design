@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 4</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="Header" class="container-fluid">
+    <nav class="navbar fixed-top navbar-expand-lg custom-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#Header">
+          <picture>
+            <source srcset="images/bakery-color.png" media="(max-width: 991px)">
+            <img class="w-50" src="images/bakery-light-1.png" alt="Logo">
+          </picture>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active px-3" aria-current="page" href="#Header">Home</a>
+            <a class="nav-link px-3" href="#WhoWeAre">About</a>
+            <a class="nav-link px-3" href="#OurLocation">Our Offer</a>
+            <a class="nav-link px-3" href="#OurBaking">Gallery</a>
+            <a class="nav-link px-3" href="#ContactInformation">Blog</a>
+            <a class="nav-link px-3" href="#footer">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="header-content d-flex flex-column align-items-center">
+      <div class="container">
+        <p class="mt-5">Welcome to</p>
+        <h1>Family Bakery</h1>
+        <p class="text-center">We're the biggest, best equipped and most advanced Bakery in the greater <br> Los Angeles area.</p>
+        <div class="buttons d-flex justify-content-center">
+          <button type="button" class="learnMore-btn btn btn-light mx-2">Learn More</button>
+          <button type="button" class="contactUs-btn btn btn-outline-light mx-2">Contact us</button>
+        </div>
+      </div>
+    </div>
+
+    <a href="#WhoWeAre" class=" loader-container">
+      <span class="loader d-block"></span>
+    </a>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasPanel" aria-labelledby="offcanvasPanelLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasPanelLabel">Theme Options</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <button id="button" class=" border-0 rounded-1 text-center text-light px-5 py-3 mb-5" style="background-color: #8e7754;">Buy Engage Now!</button>
+        <h6 class="mb-3">Choose Accent Color:</h6>
+        <div class="d-flex flex-wrap gap-2 mb-4">
+          <a href="#button" class="color-box bg-danger"></a>
+          <a href="#button" class="color-box bg-primary"></a>
+          <a href="#button" class="color-box" style="background-color: #f7a36c;"></a>
+          <a href="#button" class="color-box" style="background-color: #795548;"></a>
+          <a href="#button" class="color-box" style="background-color: #5d9cec;"></a>
+          <a href="#button" class="color-box" style="background-color: #6c757d;"></a>
+          <a href="#button" class="color-box" style="background-color: #28a745;"></a>
+          <a href="#button" class="color-box" style="background-color: #ffc107;"></a>
+          <a href="#button" class="color-box" style="background-color: #dc3545;"></a>
+          <a href="#button" class="color-box" style="background-color: #0d6efd;"></a>
+          <a href="#button" class="color-box" style="background-color: #6610f2;"></a>
+        </div>
+        <h6 class="mb-3">Choose Demo Site:</h6>
+        <div class="d-grid gap-2">
+          <a href="#" class="demo-site-item">
+            <img src="images/ben-garratt-134774-600x500.jpg" class="img-fluid rounded" alt="Demo Site 1">
+          </a>
+          <a href="#" class="demo-site-item">
+            <img src="images/stas-ovsky-123540-600x500.jpg" class="img-fluid rounded" alt="Demo Site 2">
+          </a>
+          <a href="#" class="demo-site-item">
+            <img src="images/clem-onojeghuo-206832-600x500.jpg" class="img-fluid rounded" alt="Demo Site 3">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <section id="fixed-things" class="fixed-things">
+      <a href="#" id="scrollup" class="scrollup" style="display: block;"><i class="fa fa-angle-up"></i></a>
+
+      <div class="fixed-icons-container">
+        <div class="icon-group">
+          <div class="icon-box">
+            <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasPanel" aria-controls="offcanvasPanel">
+              <i class="fas fa-cogs"></i>
+            </a>
+          </div>
+          <div class="icon-box">
+            <a href="#footer"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <section id="WhoWeAre">
+    <div class="container">
+      <div class="row align-items-center justify-content-center m-auto">
+        <div class="who-img col-lg-6 col-md-9 col-sm-12 text-center">
+          <img class="img-fluid" src="images/alexandru-stavrica-170390-800x760.jpg" alt="alexandru-stavrica">
+        </div>
+        <div class="who col-lg-6 col-md-9 col-sm-12">
+          <h2 class="mx-4 mb-4">Who we are?</h2>
+          <p class="mx-4">
+            We have been operating for over 30 years and are Members of The Federation of Master Builders.
+            We work on projects big and small from small residential extensions to full house.
+            We are so happy with this theme. Everyday it make our lives better.
+          </p>
+          <ul class="list-unstyled my-4">
+            <li>
+              <i class="fa-brands fa-envira"></i>
+              We care about environment.
+            </li>
+            <li>
+              <i class="fa-solid fa-users"></i>
+              We are trusted by hundreds of clients.
+            </li>
+            <li>
+              <i class="fa-solid fa-heart"></i>
+              Social media loves us!
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              This list is super easy to create.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="OurLocation">
+    <div class="container">
+      <div class="row align-items-center justify-content-center m-auto g-5 flex-md-row">
+        <div class="our col-lg-6 col-md-9 col-sm-12">
+          <h2>Our Location</h2>
+          <p class="p1">
+            We have been operating for over 30 years and are Members of The Federation of Master Builders.
+            We work on projects big and small from small residential extensions to full house. We are so happy
+            with this theme. Everyday it make our lives better.
+          </p>
+          <p class="p2">
+            Story on projects big and small from small residential extensions to full house. We are so happy
+            with this theme. Everyday it make our lives better.
+          </p>
+        </div>
+        <div class="our-img col-lg-6 col-md-9 col-sm-12 text-center">
+          <img class="img-fluid" src="images/full-2-800x640.jpg" alt="Food">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="OurBaking">
+    <div class="container">
+      <div class="row align-items-center justify-content-center m-auto">
+        <div class="bake col-lg-12 text-center mb-3">
+          <h3>Our Baking</h3>
+          <p class="p-bake-title">Learn more about them. We have worked truly hard to make them perfect for every use.</p>
+        </div>
+      </div>
+      <div class="row align-items-center justify-content-center m-auto text-center g-4">
+        <div class="bake col-lg-4 col-md-6 col-sm-12 p-3">
+          <img class="img-fluid mb-4" src="images/ben-garratt-134774-600x500.jpg" alt="Superior Breads">
+          <h4>Superior Breads</h4>
+          <p class="p-bake">Proin interdum, ante ut sollicitudin commodo, tellus quam sagittis libero, at semper mauris velit a velit. Phasellus commodo turpis et lacinia posuere.</p>
+        </div>
+        <div class="bake col-lg-4 col-md-6 col-sm-12 p-3">
+          <img class="img-fluid mb-4" src="images/stas-ovsky-123540-600x500.jpg" alt="Bagels">
+          <h4>Bagels</h4>
+          <p class="p-bake">Proin interdum, ante ut sollicitudin commodo, tellus quam sagittis libero, at semper mauris velit a velit. Phasellus commodo turpis et lacinia posuere.</p>
+        </div>
+        <div class="bake col-lg-4 col-md-6 col-sm-12 p-3">
+          <img class="img-fluid mb-4" src="images/clem-onojeghuo-206832-600x500.jpg" alt="Cookies">
+          <h4>Cookies</h4>
+          <p class="p-bake">Proin interdum, ante ut sollicitudin commodo, tellus quam sagittis libero, at semper mauris velit a velit. Phasellus commodo turpis et lacinia posuere.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ContactInformation">
+    <div class="container">
+      <div class="row align-items-center justify-content-center g-5 flex-md-row">
+        <div class="contact col-lg-6 col-md-9 col-sm-12">
+          <h2 class="p-3">Contact Information</h2>
+          <p class="p-3">
+            I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+          <p class="p-3 py-0">
+            Our contact details:
+          </p>
+          <ul class="list-contact my-4 text-align-left list-unstyled">
+            <li>
+              <i class="fa fa-map mx-2"></i>
+              Manchester St 123-78B, Random 713, UK
+            </li>
+            <li>
+              <i class="fa fa-phone mx-2"></i>
+              +46 123 456 789
+            </li>
+            <li>
+              <i class="fa fa-headphones mx-2"></i>
+              +37 431 456 789
+            </li>
+            <li>
+              <i class="fa fa-envelope mx-2"></i>
+              hello@sitename.com
+            </li>
+          </ul>
+        </div>
+        <div class="contact-map col-lg-6 col-md-9 col-sm-12">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110506.36752430379!2d31.076497643359364!3d30.056246400000024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145840de5ac5bedd%3A0x7a0600c9373af439!2sTBS%20-%20The%20Bakery%20Shop!5e0!3m2!1sen!2seg!4v1755558973463!5m2!1sen!2seg" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="footer">
+    <div id="footer-main" class="footer-main">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-items">
+              <h4 class="footer-title">About us</h4>
+              <div class="footer-text">
+                <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur.
+                  I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur.
+                </p>
+                <p>We are the champions! We are the most amazing theme of all time, yeah.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-items">
+              <h4 class="footer-title">Why we are special?</h4>
+              <div class="footer-text">
+                <ul>
+                  <li><i class="fa fa-chevron-right"></i>Our magical recipe.</li>
+                  <li><i class="fa fa-chevron-right"></i>We care about environment.</li>
+                  <li class="d-flex"><i class="fa fa-chevron-right "></i>We are trusted by hundreds of clients.</li>
+                  <li><i class="fa fa-chevron-right"></i>Social media loves us!</li>
+                  <li><i class="fa fa-chevron-right"></i>This list is super easy to create.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-items">
+              <h4 class="footer-title">Opening Hours</h4>
+              <div class="footer-text">
+                <ul>
+                  <li><i class="fa fa-chevron-right"></i>Monday 10AM - 9PM</li>
+                  <li><i class="fa fa-chevron-right"></i>Tuesday 10AM - 9PM</li>
+                  <li><i class="fa fa-chevron-right"></i>Wednesday 10AM - 9PM</li>
+                  <li><i class="fa fa-chevron-right"></i>Thursday 10AM - 10PM</li>
+                  <li><i class="fa fa-chevron-right"></i>Friday 10AM - 10PM</li>
+                  <li><i class="fa fa-chevron-right"></i>Weekends 10AM - 11PM</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-items">
+              <h4 class="footer-title">Contact Details</h4>
+              <div class="footer-contact-details">
+                <div class="footer-contact-details-item">
+                  <i class="fa fa-map-marker mb-5"></i>
+                  <span class="mb-3">Manchester Road 123-78B, Silictown 7854MD, Great Country</span>
+                </div>
+                <div class="footer-contact-details-item">
+                  <i class="fa fa-phone mb-2"></i>
+                  <span class="mb-2"><a href="#">+46 123 456 789</a></span>
+                </div>
+                <div class="footer-contact-details-item">
+                  <i class="fa fa-envelope mb-2"></i>
+                  <span class="mb-2"><a href="#" class="footer-links">hello@sitename.com</a></span>
+                </div>
+                <div class="footer-contact-details-item">
+                  <i class="fa fa-globe mb-2"></i>
+                  <span class="mb-2"><a href="#" class="footer-links">http://www.sitename.com</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-bottom" class="footer-bottom">
+      <div class="container">
+        <div class="row f-bottom text-center">
+          <div class="col-12 footer-image py-4">
+            <picture>
+              <img src="images/bakery-light-1.png" alt="Bakery Logo">
+            </picture>
+          </div>
+          <div class="col-md-12">
+            <p class="copyright">
+              Copyright 2017. All rights reserved.
+            </p>
+          </div>
+          <div class="col-12 footerBottom-icons">
+            <a href="#" class="icon-facebook mx-1">
+              <i class="facebook fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="icon-google-plus mx-1">
+              <i class="google fa-brands fa-google-plus-g"></i></a>
+            <a href="#" class="icon-linkedin mx-1">
+              <i class="linkedin fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="icon-twitter mx-1">
+              <i class="twitter fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
